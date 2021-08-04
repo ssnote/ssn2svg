@@ -20,12 +20,12 @@ go build
 This coelacanth.ssn file is just an example. You can use your own ssn file instead of it.
 
 ```
-cat examples/coelacanth.ssn | ssn2svg > coelacanth.svg
+cat examples/coelacanth.ssn | ./ssn2svg > coelacanth.svg
 ```
 
 You can also apply style with style.json when converting.
 
 ```
-cat examples/coelacanth.ssn | ssn2svg examples/style.json > coelacanth.svg
+cat examples/coelacanth.ssn | ./ssn2svg examples/style.json > coelacanth.svg
 ```
 

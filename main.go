@@ -269,8 +269,9 @@ func main() {
 		}
 	}
 
-	readLines(callbackLine)
-
-	svg := createSvg(*db, createCurrentStyle(defaultStyle))
-	fmt.Fprintln(os.Stdout, svg)
+	err := readLines(callbackLine)
+	if err == nil {
+		svg := createSvg(db, createCurrentStyle(defaultStyle))
+		fmt.Fprintln(os.Stdout, svg)
+	}
 }

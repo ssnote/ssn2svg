@@ -118,7 +118,7 @@ func createSvgPart(pts []float64, penId int, style *Style) string {
 	return buffer.String()
 }
 
-func createSvg(db Db, style *Style) string {
+func createSvg(db *Db, style *Style) string {
 	canvasRectangle := db.toRectangle()
 	canvasLeft := canvasRectangle.left
 	canvasTop := canvasRectangle.top
